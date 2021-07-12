@@ -96,3 +96,32 @@
 .header-row {
     min-height: 70px;
 }
+
+/* window-loader */
+.right-side {
+    position: fixed;
+    top: 0;
+    right: 0rem;
+    transition: all 1s;
+    z-index: 30;
+    width: 50vw;
+    background: bisque;
+    height: 100vh;
+}
+
+.left-side {
+    position: fixed;
+    top: 0;
+    left: 0rem;
+    transition: all .5s;
+    z-index: 30;
+    width: 50vw;
+    background:bisque;
+    height: 100vh;
+}
+
+.window-loader-area.hidden .left-side,
+.window-loader-area.hidden .right-side {    
+    width: 0;
+}
+/* -------------window-loader-END */

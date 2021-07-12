@@ -55,7 +55,13 @@ jQuery(document).ready(function() {
 
 });
 
-// ---------------
+//--------------window loader
+$(window).load(function(){
+  $('.window-loader-area').addClass('hidden')
+})
+
+
+// ---------js animacija------
 $(".escape").click(function(e){
   e.preventDefault();
   $(".moveOnClick").animate({
@@ -81,5 +87,5 @@ $(".fly").click(function(){
 
 $('.adv-list-item').click(function(){
   $('.video-link').trigger('click');
-});
+});   //---------Neveikia...
 
