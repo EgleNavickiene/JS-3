@@ -1,0 +1,247 @@
+body {
+    padding-bottom: 15rem;
+}
+
+.header-area {
+    background: white;
+}
+
+.company-logo-header img {
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.infotechno-bg {  
+    background-color: rgb(236, 227, 215); 
+}
+
+.infotechno-img-one {
+    position: absolute;
+    padding-top: 1rem;
+}
+  
+.infotechno-img-two {
+    position: relative;
+    z-index: 2;
+}
+
+.info-techno-hero-text {
+    padding: 0 20pt;
+    margin-right: 30px;
+}
+
+.blue-heading {
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.info-techno-hero-text h1 {
+    font-size: 3rem;
+}
+
+.ht-btn {
+    background: #0a58ca;
+    padding: 10pt 25pt;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16pt;
+    letter-spacing: 1pt;
+    color: white;
+    border-radius: 10px;
+}
+
+.ht-btn:hover {
+    color: rgb(245, 216, 179);
+}
+
+.gray-bacground-area {
+    background: rgba(211, 211, 211, 0.356);
+}
+
+.section-space_ptb-60 {
+    padding-top: 60pt;
+    padding-bottom: 60pt;
+}
+
+.logo-blue {
+    filter: grayscale(100%);
+    opacity: 0.3;
+    margin: 0 auto;
+}
+
+.logo-blue:hover {
+    filter: none;
+    opacity: 100%;
+}
+
+.info-techno-background-area {
+    background-image: url(../img/mitech-home-infotechno-section-company-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* .our-services-area {
+    background: rgba(211, 211, 211, 0.5);
+} */
+
+.section-sub-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.section-heading {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.image-box-wrap {
+    background: white;
+    padding: 40px 20px;
+    box-shadow: 10px 10px 5px lightgray;
+}
+
+.box-image {
+    margin-bottom: 2rem;
+}
+
+.content-heading, .content-text {
+    margin-bottom: 1.5rem;
+}
+
+.animated-arrow {
+    background-color: #d2a98e;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Absolutaus elemento centravimas parent elemente */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -30px;
+    transition: all 3000ms linear;
+}
+
+.animated-arrow:hover {
+    cursor: pointer;
+    background-color: red;
+    color: black;
+    transform: scale(2);
+}
+
+i {
+  color: white;
+  font-size: 26px;
+}
+   
+
+/* .arrow-anchor {
+    height: 20px;
+    position: relative;
+}
+
+.circle-arrow:hover  {    
+    color: #0a58ca;
+}
+
+.arrow-link {
+    text-decoration: none;
+    color: rgb(219, 189, 150);
+} */
+
+
+
+.section-under-heading {
+    margin-top: 60pt;
+}
+
+.adv-list-item {
+    padding-top: 30px;
+    border-bottom: lightgray 1px solid;
+}
+
+.list-number {
+    font-size: 30px;
+    font-weight: 700;
+    color: lightgray;
+    padding-bottom: 40px;
+}
+
+.list-numb-link {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+.list-numb-link:hover .list-number{
+    color: #0a58ca;
+}
+
+.video-bg {
+    background-image: url(../img/home-infotechno-video-intro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    min-height: auto;
+}
+
+.section-heading-white {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.viewo-text-wrap a {
+    text-decoration: none;  
+}
+
+.video-content {
+display: flex;
+flex-direction: row;
+align-items: center;
+text-decoration: none;  
+}
+
+.video-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.video-text {      
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 3rem;
+}
+
+.video-link:hover {
+    color: white;
+}
+
+.video-play-icon {
+    margin-right: auto;
+    margin-left: auto;
+    width: 5rem;
+    height: 5rem;
+    background-color: blue;
+    border-radius: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-play-arrow {
+    font-size: xx-large;
+}

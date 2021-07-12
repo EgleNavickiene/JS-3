@@ -1,0 +1,43 @@
+body {
+  background: rgb(240, 239, 230);
+}
+
+/* Custom mygtuko stilius */
+.btn-eimantas {
+  background: pink;
+  color: white;
+  border-color: red;
+  border-radius: 100px;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bit-slider,
+.bit-slider2,
+.bit-slider3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.bit-slider img {
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.bit-slider2 img {
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.bit-slider3 img {
+  max-height: 200px;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    color: black;
+}

@@ -1,0 +1,40 @@
+.carousel-to-left-icon,
+.carousel-to-right-icon {
+    font-size: 60px;
+    color: rgb(1, 37, 155);
+}
+
+.slider-2-cont {
+    width: 45%;
+}
+
+.form-img-part img {
+    width: 80%;
+}
+
+.go-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.go-btn:hover {
+    background: blue;
+}
+
+
+/* --------------- */
+@media (max-width: 575.98px) {
+    .form-img-part img {
+        position: absolute;
+        top: 20%;
+        right: 3%;
+        opacity: 0.3;
+        width:40%;
+        padding: 0;
+    } 
+    .slider-2-cont {
+        position: relative;
+        margin:0 auto;
+        width: 100%;
+    }
+}
