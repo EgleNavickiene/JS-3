@@ -25,7 +25,7 @@ $(document).ready(function() {
   alert('Labas lietuva!');
 }*/
 
-
+// Šoninis meniu (offcanvas)------------
 document.getElementById('atidarymoNuoroda').onclick = function() {
 
   var langas = document.getElementById('offcanvasAtidarymas');
@@ -41,6 +41,8 @@ document.getElementById('atidarymoNuoroda').onclick = function() {
 
 };
 
+
+// Slapukai-----------
 jQuery(document).ready(function() {
 
   jQuery('#sutinku').on('click',function() {
@@ -54,6 +56,7 @@ jQuery(document).ready(function() {
   });
 
 });
+
 
 //--------------window loader
 $(window).load(function(){
@@ -85,7 +88,69 @@ $(".fly").click(function(){
   });
 });
 
+// trigeris imituojantis video link'o paspaudimą---
 $('.adv-list-item').click(function(){
   $('.video-link').trigger('click');
 });   //---------Neveikia...
+
+// scroll to top rodyklė---
+jQuery('.gotop').on('click', function(e) {
+
+  e.preventDefault();
+
+  jQuery('html,body').animate({scrollTop: 0}, 'fast');
+
+});
+
+jQuery(window).on('scroll', function() {
+  let virsus          = jQuery(document).scrollTop();
+  let puslapioAukstis = jQuery(document).height();
+  let langoAukstis    = jQuery(window).height();
+  let bendras         = virsus + langoAukstis;
+  let counterioVirsus = jQuery('.facts-area-row').position().top;
+ 
+  //console.log(virsus);
+  //console.log(puslapioAukstis);
+  //console.log(langoAukstis);
+  ///console.log(bendras);
+
+  if(bendras == puslapioAukstis) {
+    //alert('Yra');
+
+    jQuery('.gotop').addClass('show');
+  } 
+
+  if(virsus + langoAukstis < puslapioAukstis - 800) {
+    jQuery('.gotop').removeClass('show');
+  }
+
+  // --- Counter ---
+  if(virsus + langoAukstis >= counterioVirsus) {
+    $('.counter').each(function() {
+      var $this = $(this),
+          countTo = $this.attr('data-count');
+      
+      $({countNum: $this.text()}).animate({
+        countNum: countTo
+      },
+    
+      {
+        duration: 4000,
+        easing:'linear',
+        step: function() {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function() {
+          $this.text(this.countNum);
+          // alert('finished');
+        }
+      });  
+      
+    });
+  }
+
+});
+
+
+
 
