@@ -151,6 +151,60 @@ jQuery(window).on('scroll', function() {
 
 });
 
+// --- Užduotis iš paskutinės pamokos: -----------------------------
+/* Sugeneruokite 15 eilučių masyvą, kuriame turėtume objektus, kurie nurodytų informaciją sudarytą
+ iš trijų reikšmių. Reikšmės ir indeksai turi būti sugeneruoti atsitiktinai. Panaudokite masyvą, 
+ kad sugeneruoti lentelę ir ją patalpinkite Mitech pavyzdžio dešinėje pusėje atsidarančiame lange.*/
 
+//funkcijos raidėms ir skaičiams generuoti:---------------
+function randomString(length) {
+
+  let randomraides = '';
+  let raides = 'abcdefghijklmnopqrstuvwxyz';
+
+  for ( let i = 0; i < length; i++ ) {
+
+      randomraides += raides.charAt( Math.floor( Math.random() * raides.length) );
+  }
+  return randomraides;
+}
+
+function randomSkaicius(min, max) { 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+};
+//---------------------------------------------------------
+
+document.querySelector('.appended-text3').innerHTML += 
+'<table id="paskutine_lentele" class="Xlentele">' +
+  '<thead>' + 
+    '<th>Reikšmė1</th>' +
+    '<th>Reikšmė2</th>' +
+    '<th>Reikšmė3</th>' +
+  '</thead>' + 
+  '<tbody>' + 
+  '</tbody>' +
+'</table>';
+
+let paskutine_lentele = document.querySelector('#paskutine_lentele > tbody');
+
+let masyvas0806 =[];
+
+for(let i = 0; i < 15; i++) {
+
+  let objektas = {
+      Reikšmė1: randomString(5),
+      Reikšmė2: randomString(7),
+      Reikšmė3: randomSkaicius(1, 129)
+  }
+
+  masyvas0806.push(objektas);
+} 
+
+for(let i = 0; i < masyvas0806.length; i++) {
+  paskutine_lentele.innerHTML += '<tr><td>' + masyvas0806[i]['Reikšmė1'] + '</td>' +
+                                     '<td>' + masyvas0806[i]['Reikšmė2'] + '</td>' +
+                                     '<td>' + masyvas0806[i]['Reikšmė3'] + '</td>';
+}
+//--------------------------------------
 
 
